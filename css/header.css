@@ -1,0 +1,145 @@
+.top-banner {
+    background-color: #65256F;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+.top-banner a {
+    color: #ffd700;
+}
+
+.header {
+    padding: 8px 0 6px;
+    box-shadow: -4px 9px 12px -11px rgba(0,0,0,0.72);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header_burger{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.header__nav-links {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.header__nav-links li{
+    list-style: none;
+}
+
+.header__nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+   
+}
+
+.header__nav-links a:hover {
+    border-bottom: 2px solid #FFC107;
+    margin: 0 auto; 
+    text-align: center;
+    padding-bottom: 10px;
+   
+}
+
+.header__nav-links a:focus {
+    border-bottom: 2px solid #FFC107;
+    margin: 0 auto; 
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.header__nav-button {
+    padding: 12px 30px;
+    background: #65256F;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.header__nav-button:hover {
+    transform:scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header__nav-button:active{
+    opacity: 0.8;
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: #7F7979;
+    display: none;
+}
+
+
+@media (max-width:1200px) {
+    .header {
+        padding: 8px 10px 6px 10px;
+        z-index: 3;
+    }           
+}
+
+@media (max-width: 995px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .header__nav{
+        position: fixed;
+        z-index: 2;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, .1);
+        transition: top 0.3s ease; /* Smooth transition */
+        display: block;
+    }
+
+    .header__nav-links:active{
+        top: 90px; 
+        display: block;
+    }
+
+    
+    
+    .header__nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        
+    }
+
+    .header__nav-links li {
+        margin: 0px 0px;
+    }
+
+    .header__nav-links a {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
+
+

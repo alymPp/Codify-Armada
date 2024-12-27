@@ -1,0 +1,43 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+.top_bg{
+    background: #65256F;
+}
+.top-banner{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.section-title {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: transparent;
+}
+
+p, h2 ,h4{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+}
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+
+
+
